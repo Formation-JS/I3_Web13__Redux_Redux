@@ -1,0 +1,20 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5ch;
+    box-sizing: border-box;
+
+    font-size: 1.6em;
+    background-color: darkslategray;
+    color: khaki;
+
+    .fact {
+        color: cyan;
+        font-style: oblique;
+        font-size: 0.8em;
+    }
+}
