@@ -6,6 +6,11 @@
   - Cocher un élément
   - Supprimer un élément
   - Vider la liste
+- Gestion de recettes
+  - Ajouter une recette
+  - Supprimer une recette
+- BONUS : 
+  - Quand on ajoute des ingrédients à une recette, ils sont ajoutés a la liste de course
 
 ## Installation
 Package pour mettre en place Redux
