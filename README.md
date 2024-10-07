@@ -18,6 +18,16 @@ Package pour mettre en place Redux
 npm i redux @reduxjs/toolkit
 ```
 
+Package pour lier l'app React et le store Redux
+```
+npm i react-redux
+```
+
 ## Mise en place
-- Création des *ActionCreators* et du *Reducer* (ou d'un *Slice*)
-- Configuration du store 
+- Store Redux
+  - Création des *ActionCreators* et du *Reducer* (ou d'un *Slice*)
+  - Configuration du store 
+
+- Interaction entre React et Redux
+  - Rendre accessible le store dans l'application
+  - Acceder au store depuis les composants via des Hooks de "React-redux"

@@ -3,8 +3,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
+//! Import du necessaire pour utiliser le store de Redux
+import store from './store/store.ts';
+import { Provider } from 'react-redux';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </StrictMode>,
 )
