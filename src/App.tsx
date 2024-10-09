@@ -1,14 +1,17 @@
+import { Outlet } from 'react-router-dom';
 import './App.css'
 import Header from './containers/Header/Header';
-import GroceryPage from './pages/Grocery/GroceryPage';
+import NavBar from './containers/NavBar/NavBar';
 
 function App() {
  
   return (
     <>
-      <Header fact='Il ne pleut pas' />
+      <Header fact='Maintenant avec du routing' />
+      <NavBar />
 
-      <GroceryPage />
+      {/* ↓ Composant de react-router qui permet d'afficher un élément via le routing */}
+      <Outlet />
     </>
   )
 }
