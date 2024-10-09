@@ -5,6 +5,11 @@ import GroceryAddPage from './pages/Grocery/GroceryAddPage';
 import App from './App';
 import NotFoundPage from './pages/Error/NotFoundPage';
 import CountryPage from './pages/Country/CountryPage';
+import RecipeLayout from './pages/Recipe/RecipeLayout';
+import RecipeIndexPage from './pages/Recipe/RecipeIndexPage';
+import RecipeListPage from './pages/Recipe/RecipeListPage';
+import RecipeDetailPage from './pages/Recipe/RecipeDetailPage';
+import RecipeFormPage from './pages/Recipe/RecipeFormPage';
 
 const routes : RouteObject[] = [
     {
@@ -30,6 +35,28 @@ const routes : RouteObject[] = [
             {
                 path: 'country',
                 element: <CountryPage />
+            },
+            {
+                path: 'recipe',
+                element: <RecipeLayout />,
+                children: [
+                    { 
+                        index: true,
+                        element: <RecipeIndexPage />
+                    },
+                    {
+                        path: 'list',
+                        element: <RecipeListPage />
+                    },
+                    {
+                        path: 'detail/:id',
+                        element: <RecipeDetailPage />
+                    },
+                    {
+                        path: 'add',
+                        element: <RecipeFormPage />
+                    }
+                ]
             }
         ]
     }

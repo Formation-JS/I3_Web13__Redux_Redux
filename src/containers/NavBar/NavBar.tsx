@@ -15,6 +15,9 @@ const NavBar = () => {
                     <Link to="/country">Pays</Link>
                 </li>
                 <li>
+                    <Link to="/recipe">Recette</Link>
+                </li>
+                <li>
                     <Link to="/bowser">Perdu ?</Link>
                 </li>
             </ul>
