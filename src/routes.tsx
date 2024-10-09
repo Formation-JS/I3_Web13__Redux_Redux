@@ -3,6 +3,7 @@ import HomePage from './pages/Home/HomePage';
 import GroceryPage from './pages/Grocery/GroceryPage';
 import GroceryAddPage from './pages/Grocery/GroceryAddPage';
 import App from './App';
+import NotFoundPage from './pages/Error/NotFoundPage';
 
 const routes : RouteObject[] = [
     {
@@ -12,6 +13,10 @@ const routes : RouteObject[] = [
             {
                 index: true,
                 element: <HomePage />
+            },
+            {
+                path:'*', // Si aucunne route match 
+                element:<NotFoundPage />
             },
             {
                 path: 'grocery',
