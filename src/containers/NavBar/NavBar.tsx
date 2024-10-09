@@ -12,6 +12,9 @@ const NavBar = () => {
                     <Link to="/grocery">Course</Link>
                 </li>
                 <li>
+                    <Link to="/country">Pays</Link>
+                </li>
+                <li>
                     <Link to="/bowser">Perdu ?</Link>
                 </li>
             </ul>

@@ -4,6 +4,7 @@ import GroceryPage from './pages/Grocery/GroceryPage';
 import GroceryAddPage from './pages/Grocery/GroceryAddPage';
 import App from './App';
 import NotFoundPage from './pages/Error/NotFoundPage';
+import CountryPage from './pages/Country/CountryPage';
 
 const routes : RouteObject[] = [
     {
@@ -25,6 +26,10 @@ const routes : RouteObject[] = [
             {
                 path: 'grocery/add',
                 element: <GroceryAddPage />
+            },
+            {
+                path: 'country',
+                element: <CountryPage />
             }
         ]
     }
