@@ -16,6 +16,6 @@ export async function fetchCountryByName(name: string) : Promise<Country> {
         shortName: data.cca2,
         capital : data.capital,
         flag: data.flag,
-        currencies : Object.values(data.currencies) as [{ name: string; symbol: string; }]
+        currencies : Object.values(data.currencies)
     };
 };
